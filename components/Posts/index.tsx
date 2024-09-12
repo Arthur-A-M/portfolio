@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 
-export function BlogPosts() {
+export function BlogPosts(): JSX.Element {
   let allBlogs = getBlogPosts()
 
   return (

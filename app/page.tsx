@@ -1,6 +1,6 @@
 import { BlogPosts } from '../components';
 
-export default function Page() {
+export default function Page(): JSX.Element {
   const style = {
     h1: {
       marginBottom: '1.5rem',

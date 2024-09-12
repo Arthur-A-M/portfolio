@@ -4,7 +4,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React from 'react'
 
-function Table({ data }) {
+function Table({ data }): JSX.Element {
   let headers = data.headers.map((header, index) => (
     <th key={index}>{header}</th>
   ))
@@ -26,7 +26,7 @@ function Table({ data }) {
   )
 }
 
-function CustomLink(props) {
+function CustomLink(props): JSX.Element {
   let href = props.href
 
   if (href.startsWith('/')) {
@@ -64,7 +64,7 @@ function slugify(str) {
     .replace(/\-\-+/g, '-') // Replace multiple - with single -
 }
 
-function createHeading(level) {
+function createHeading(level): (props) => JSX.Element {
   const Heading = ({ children }) => {
     let slug = slugify(children)
     return React.createElement(
@@ -99,7 +99,7 @@ let components = {
   Table,
 }
 
-export function CustomMDX(props) {
+export function CustomMDX(props): JSX.Element {
   return (
     <MDXRemote
       {...props}
