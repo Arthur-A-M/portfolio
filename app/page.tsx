@@ -10,6 +10,7 @@ export default function Page(): JSX.Element {
     },
     p: {
       marginBottom: '1rem',
+      whiteSpace: 'pre-line',
     },
     div: {
       marginTop: '1.5rem',
@@ -22,11 +23,21 @@ export default function Page(): JSX.Element {
         My Portfolio
       </h1>
       <p style={style.p}>
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`
+        As a developer, my core philosophy is to consistently add value through projects that deliver practical applications for users. I aim to create solutions that are not only functional but also meaningful in real-world contexts.\n
+        \n
+        As a learner, I believe in the importance of being a T-shaped professional. This means having deep expertise in specific areas while also understanding the broader context in which my technical skills are applied.\n
+        \n
+        Tech Stack:\n
+        Coding: Visual Studio Code, Node, JavaScript, HTML, CSS, TypeScript, React Native, Codeium, SQLite, Python\n
+        API Tools: Postman\n
+        Simulation: Android Studio\n
+        Projects:\n
+        Masqui.a: A mobile app project designed for hospital use\n
+        Joga Mais: A mobile app for scheduling sports games\n
+        Datax: An internal-use mobile app developed for a company\n
+        LinkAdvice: A website project for accessing public government information\n
+        `}
       </p>
       <div style={style.div}>
         <BlogPosts />
