@@ -6,9 +6,36 @@ export function GET(request: Request) {
 
   return new ImageResponse(
     (
-      <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
-        <div tw="flex flex-col md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
-          <h2 tw="flex flex-col text-4xl font-bold tracking-tight text-left">
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          width: '100%',
+          height: '100%',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'white',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            width: '100%',
+            padding: '12px 4px',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <h2
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              fontSize: '4xl',
+              fontWeight: 'bold',
+              textAlign: 'left',
+            }}
+          >
             {title}
           </h2>
         </div>
