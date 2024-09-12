@@ -1,4 +1,4 @@
-import { BlogPosts } from '../components';
+import { BlogPosts } from 'components';
 
 export default function Page(): JSX.Element {
   const style = {
